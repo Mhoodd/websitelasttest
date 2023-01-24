@@ -11,15 +11,18 @@
               <div class="footer-widget f-about">
                 <div class="logo">
                   <a href="index.html">
-                    <img src="{{ asset('site/images/')}}/logo.svg" alt="#" class="img-fluid" />
+                    @if($Logo_footer && $Logo_footer->fileupload)
+              <img src="{{ asset('img/logo/'.$Logo_footer->fileupload) }}" alt="Logo" />
+              @endif
                   </a>
                 </div>
                 <p class=" text-white">
-                  Making the world a better place through constructing elegant
-                  hierarchies.
+                 <?php $sks = array_search('footer_text',$general,true); if ($sks !== false) {?>
+   {!!$homedata[$sks]->valueoftext!!} <?php }?>
                 </p>
                 <p class="copyright-text text-white">
-                  <span>© 2024 Business. Designed and Developed</span>
+                  <span><?php $sks = array_search('footer_copyright',$general,true); if ($sks !== false) {?>
+   {!!$homedata[$sks]->valueoftext!!} <?php }?></span>
                 </p>
               </div>
               <!-- End Single Widget -->

@@ -8,12 +8,16 @@
         <div class="row">
           <div class="col-12">
             <div class="content">
-              <h6>latest news</h6>
-              <h2 class="fw-bold">Latest News & Blog</h2>
+  <h6><?php $sks = array_search('Blog',$general,true); if ($sks !== false) {
+ echo   $homedata[$sks]->valueoftext ;}?></h6>
+              <h2 class="fw-bold"><?php 
+              $sks = array_search('lastnew_title',$general,true);  if ($sks !== false) {
+ echo   $homedata[$sks]->valueoftext ;}?></h2>
               <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form.
+                <?php $sks = array_search('lastnew_text',$general,true); if ($sks !== false) {
+ echo   $homedata[$sks]->valueoftext ;}?>
               </p>
+
             </div>
           </div>
         </div>
@@ -21,83 +25,39 @@
       </div>
       <!-- container -->
     </div>
+
+    @if($newsblog)
     <!--======  End Section Title Five ======-->
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 col-md-6 col-12">
+@foreach($newsblog as $is => $news)
+      <div class="col-lg-4 col-md-6 col-12">
           <!-- Single News -->
           <div class="single-news">
             <div class="image">
-              <a href="javascript:void(0)"><img class="thumb" src="{{ asset('site/images/blog/')}}/1.jpg" alt="Blog" /></a>
-              <div class="meta-details">
-                <img class="thumb" src="{{ asset('site/images/blog/')}}/b6.jpg" alt="Author" />
-                <span>BY TIM NORTON</span>
+              <a href="javascript:void(0)"><img class="thumb" src="{{ asset('site/images/blog/'.$news->img_news)}}" alt="{{$news->name}}" /></a>
+             @if($news->byname) 
+             <div class="meta-details">
+                <img class="thumb" src="{{ asset('site/images/blog/'.$news->img_news)}}" alt="Author {{$news->byname}}" />
+                <span>{{$news->byname}}</span>
               </div>
             </div>
+            @endif
             <div class="content-body">
               <h4 class="title">
-                <a href="javascript:void(0)"> Make your team a Design driven company </a>
+                <a href="javascript:void(0)"> {{$news->title}} </a>
               </h4>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry. Lorem Ipsum has been the industry's
-                standard.
+                {{$news->desc_news}}
               </p>
             </div>
           </div>
           <!-- End Single News -->
         </div>
-        <div class="col-lg-4 col-md-6 col-12">
-          <!-- Single News -->
-          <div class="single-news">
-            <div class="image">
-              <a href="javascript:void(0)"><img class="thumb" src="{{ asset('site/images/blog/')}}/2.jpg" alt="Blog" /></a>
-              <div class="meta-details">
-                <img class="thumb" src="{{ asset('site/images/blog/')}}/b6.jpg" alt="Author" />
-                <span>BY TIM NORTON</span>
-              </div>
-            </div>
-            <div class="content-body">
-              <h4 class="title">
-                <a href="javascript:void(0)">
-                  The newest web framework that changed the world
-                </a>
-              </h4>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry. Lorem Ipsum has been the industry's
-                standard.
-              </p>
-            </div>
-          </div>
-          <!-- End Single News -->
-        </div>
-        <div class="col-lg-4 col-md-6 col-12">
-          <!-- Single News -->
-          <div class="single-news">
-            <div class="image">
-              <a href="javascript:void(0)"><img class="thumb" src="{{ asset('site/images/blog/')}}/3.jpg" alt="Blog" /></a>
-              <div class="meta-details">
-                <img class="thumb" src="{{ asset('site/images/blog/')}}/b6.jpg" alt="Author" />
-                <span>BY TIM NORTON</span>
-              </div>
-            </div>
-            <div class="content-body">
-              <h4 class="title">
-                <a href="javascript:void(0)">
-                  5 ways to improve user retention for your startup
-                </a>
-              </h4>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and
-                typesetting industry. Lorem Ipsum has been the industry's
-                standard.
-              </p>
-            </div>
-          </div>
-          <!-- End Single News -->
-        </div>
+@endforeach
+
       </div>
     </div>
+    @endif
   </div>
   <!-- End Latest News Area -->

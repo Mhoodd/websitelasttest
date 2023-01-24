@@ -89,17 +89,17 @@ $dataofdatalogo->update();
 $dataofdatalogofooter->update();
             if ($dataofdatalogo) {
 
-                return redirect('admin/generalinfo/1')->with('success', 'New logo created!');
+                return redirect('admin/generalinfo/1')->with('success', 'New logo updated!');
             }
 
-            return redirect('admin/generalinfo/1')->with('error', 'Failed to create new logo! Try again.');
+            return redirect('admin/generalinfo/1')->with('error', 'Failed to updated new logo! Try again.');
         } catch (\Exception $e) {
             $bug = $e->getMessage();
 
             return redirect()->back()->with('error', $bug);
         }
         }else{
-            return redirect('admin/generalinfo/1')->with('error', 'Failed to create new logo! Try again.');
+            return redirect('admin/generalinfo/1')->with('error', 'Failed to updated new logo! Try again.');
 
         }
 

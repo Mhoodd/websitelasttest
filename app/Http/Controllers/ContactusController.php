@@ -35,6 +35,54 @@ $skksk = $data['contactdata']->update();
 }
 
 
+public function addcontactsdata(Request $request ):mixed{
+
+
+    if ($request->has('_token') ) {
+
+              $validator = Validator::make($request->all(), [
+            'name' => 'required',
+            'email' => 'required|email',
+            'phone' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:10',
+            'subject'=>'required',
+            'message' => 'required'
+
+        ]);
+
+               if ($validator->fails()) {
+            return redirect()->back()->withInput()->with('error', $validator->messages()->first());
+        }
+
+  $contactdata = ContactUsModel::create([
+                'name' => $request->name,
+                'subject' => $request->subject,
+                'phone' => $request->phone,
+                'email' => $request->email,
+                'message' => $request->message,
+                'ipandserver'=>$request->ipandserver,
+                      
+            ]);
+
+     
+
+
+            if ($contactdata) {
+
+                return redirect('/')->with('success', 'contact us success!');}
+
+
+    }
+
+if ($data['contactdata']) {
+              return view('/',$data);
+
+}else{
+return redirect('/')->with('error', 'Failed to insert this contactUs! Try again.');
+
+}
+
+}
+
 public function editcontactsdata($id,Request $request ):mixed{
 
     $data['contactdata'] = ContactUsModel::findOrFail($id);
@@ -75,6 +123,7 @@ return redirect('admin/contactus')->with('error', 'Failed to Edit this contacts!
 }
 
 }
+
 
 public function removecontacts(Request $request): mixed
 {

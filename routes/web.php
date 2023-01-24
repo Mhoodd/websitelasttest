@@ -26,6 +26,7 @@ use App\Http\Controllers\ContactusController;
 */ 
 // Route::get('/', function () { return view('home'); });
 Route::get('/', [HomeController::class,'index'])->name('homepage');
+Route::post('/addcontactsdata', [ContactusController::class,'addcontactsdata'])->name('addcontactsdata');
 
 
 Route::get('login', [LoginController::class,'showLoginForm'])->name('login');

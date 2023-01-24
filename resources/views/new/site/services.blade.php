@@ -7,11 +7,14 @@
         <div class="row">
           <div class="col-12">
             <div class="content">
-              <h6>Services</h6>
-              <h2 class="fw-bold">Our Best Services</h2>
+              <h6><?php $sks = array_search('Services',$general,true); if ($sks !== false) {
+ echo   $homedata[$sks]->valueoftext ;}?></h6>
+              <h2 class="fw-bold"><?php 
+              $sks = array_search('OurBestServices',$general,true);  if ($sks !== false) {
+ echo   $homedata[$sks]->valueoftext ;}?></h2>
               <p>
-                There are many variations of passages of Lorem Ipsum available,
-                but the majority have suffered alteration in some form.
+                <?php $sks = array_search('our_servicestext',$general,true); if ($sks !== false) {
+ echo   $homedata[$sks]->valueoftext ;}?>
               </p>
             </div>
           </div>
@@ -21,93 +24,28 @@
       <!-- container -->
     </div>
     <!--======  End Section Title Five ======-->
+
+    @if($services)
     <div class="container">
       <div class="row">
+
+        @foreach($services as $itm=>$service)
         <div class="col-lg-4 col-md-6">
           <div class="single-services">
             <div class="service-icon">
-              <i class="lni lni-capsule"></i>
+              <i class="lni {{$service->icon}}"></i>
             </div>
             <div class="service-content">
-              <h4>Refreshing Design</h4>
+              <h4>{{$service->title}}</h4>
               <p>
-                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                eirmod tempor ividunt labor dolore magna.
+                {{$service->desc_service}}
               </p>
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-services">
-            <div class="service-icon">
-              <i class="lni lni-bootstrap"></i>
-            </div>
-            <div class="service-content">
-              <h4>Solid Bootstrap 5</h4>
-              <p>
-                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                eirmod tempor ividunt labor dolore magna.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-services">
-            <div class="service-icon">
-              <i class="lni lni-shortcode"></i>
-            </div>
-            <div class="service-content">
-              <h4>100+ Components</h4>
-              <p>
-                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                eirmod tempor ividunt labor dolore magna.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-services">
-            <div class="service-icon">
-              <i class="lni lni-dashboard"></i>
-            </div>
-            <div class="service-content">
-              <h4>Speed Optimized</h4>
-              <p>
-                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                eirmod tempor ividunt labor dolore magna.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-services">
-            <div class="service-icon">
-              <i class="lni lni-layers"></i>
-            </div>
-            <div class="service-content">
-              <h4>Fully Customizable</h4>
-              <p>
-                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                eirmod tempor ividunt labor dolore magna.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6">
-          <div class="single-services">
-            <div class="service-icon">
-              <i class="lni lni-reload"></i>
-            </div>
-            <div class="service-content">
-              <h4>Regular Updates</h4>
-              <p>
-                Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy
-                eirmod tempor ividunt labor dolore magna.
-              </p>
-            </div>
-          </div>
-        </div>
+       @endforeach
       </div>
     </div>
+    @endif
   </section>
   <!-- ===== service-area end ===== -->
