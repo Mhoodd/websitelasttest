@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 24 يناير 2023 الساعة 05:40
+-- Generation Time: 24 يناير 2023 الساعة 12:36
 -- إصدار الخادم: 10.4.17-MariaDB
 -- PHP Version: 8.0.8
 
@@ -49,7 +49,7 @@ CREATE TABLE `aboutusinfo` (
 --
 
 INSERT INTO `aboutusinfo` (`id`, `name`, `lang`, `created_at`, `updated_at`, `aboutus_word`, `aboutus_text`, `whoweare_word`, `whoweare_text`, `ourvision_word`, `ourvision_text`, `ourhistory_word`, `ourhistory_text`, `img_about`) VALUES
-(1, 'aboutus', '1', NULL, '2023-01-23 22:22:03', 'About Us', '<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, look like readable English.</p><p>There are many variations of passages&nbsp; Lorem Ipsum available, but the majority have in some form, by injected humour.</p><p><br></p>', 'Who We Are', '<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-ssssssssssson of letters, look like readable English.</p><p>There are many variations of passages&nbsp; Lorem Ipsum available, but the majority have in some form, by injected humour.</p>', 'Our Vision', '<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-levvvvvvvn of letters, look like readable English.</p><p>There are many variations of passages&nbsp; Lorem Ipsum available, but the majority have in some form, by injected humour.</p><p><br></p>', 'Our History', '<p>It is a long established fact that a reader wilhhhhhhhhhhhhhhh readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, look like readable English.\r\n\r\nThere are many variations of passages  Lorem Ipsum available, but th</p><p style=\"box-sizing: border-box; -webkit-font-smoothing: antialiased; text-rendering: optimizelegibility; outline: none !important; margin-top: 0px; margin-bottom: 1rem; font-size: 14px; color: rgb(0, 0, 0); font-family: &quot;Nunito Sans&quot;, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">mal distribution of letters, look like readable English.</p><p><br></p><p style=\"box-sizing: border-box; -webkit-font-smoothing: antialiased; text-rendering: optimizelegibility; outline: none !important; margin-top: 0px; margin-bottom: 1rem; font-size: 14px; color: rgb(0, 0, 0); font-family: &quot;Nunito Sans&quot;, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">There are many variations of passages&nbsp; Lorem Ipsum available, but th</p><p><br></p><p>e majority have in some form, by injected humour.</p>', '1674519641about-img1.jpg.jpg'),
+(1, 'aboutus', '1', NULL, '2023-01-23 22:22:03', 'About Us', 'There are many variations of passages  Lorem Ipsum available, but the majority have in some form, by injected humour.\n', 'Who We Are', '<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-ssssssssssson of letters, look like readable English.</p><p>There are many variations of passages&nbsp; Lorem Ipsum available, but the majority have in some form, by injected humour.</p>', 'Our Vision', '<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-levvvvvvvn of letters, look like readable English.</p><p>There are many variations of passages&nbsp; Lorem Ipsum available, but the majority have in some form, by injected humour.</p><p><br></p>', 'Our History', '<p>It is a long established fact that a reader wilhhhhhhhhhhhhhhh readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, look like readable English.\r\n\r\nThere are many variations of passages  Lorem Ipsum available, but th</p><p style=\"box-sizing: border-box; -webkit-font-smoothing: antialiased; text-rendering: optimizelegibility; outline: none !important; margin-top: 0px; margin-bottom: 1rem; font-size: 14px; color: rgb(0, 0, 0); font-family: &quot;Nunito Sans&quot;, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">mal distribution of letters, look like readable English.</p><p><br></p><p style=\"box-sizing: border-box; -webkit-font-smoothing: antialiased; text-rendering: optimizelegibility; outline: none !important; margin-top: 0px; margin-bottom: 1rem; font-size: 14px; color: rgb(0, 0, 0); font-family: &quot;Nunito Sans&quot;, sans-serif; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\">There are many variations of passages&nbsp; Lorem Ipsum available, but th</p><p><br></p><p>e majority have in some form, by injected humour.</p>', '1674519641about-img1.jpg.jpg'),
 (4, 'عن الشركة', '2', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
@@ -70,6 +70,14 @@ CREATE TABLE `contactus` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp(),
   `updated_at` timestamp NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- إرجاع أو استيراد بيانات الجدول `contactus`
+--
+
+INSERT INTO `contactus` (`id`, `name`, `email`, `phone`, `subject`, `message`, `ipandserver`, `readornot`, `created_at`, `updated_at`) VALUES
+(2, 'mmhod', 'kdskl@ds.com', '2838838', 'dsfklj', 'kdsf jfkdjfksd ljflk jsdj fklsdj k jsdl', '{', 1, '2023-01-24 09:24:51', '2023-01-24 09:24:51'),
+(3, 'dfslkajfkld', 'kljdkslf@dksl.com', '2333', 'kkdjlfdj', 'kldjsfkljsd', '{', 1, '2023-01-24 09:25:28', '2023-01-24 09:25:28');
 
 -- --------------------------------------------------------
 
@@ -114,14 +122,14 @@ INSERT INTO `generalinfo` (`id`, `name`, `lang`, `valueoftext`, `fileupload`, `t
 (3, 'Services', '1', 'Services', '', '', NULL, NULL, NULL),
 (4, 'Blog', '1', 'Blog', '', '', NULL, NULL, NULL),
 (5, 'Contact', '1', 'Contact', '', '', NULL, NULL, NULL),
-(6, 'Watch Intro', '1', 'Watch Intro', '', '', NULL, NULL, NULL),
-(7, 'Our Best Services', '1', 'Our Best Services', '', '', NULL, NULL, NULL),
-(8, 'our services text', '1', 'There are many variations of sssssss kkk Ipsum available, but the majority have suffered alteration in some form.', '', '', NULL, NULL, '2023-01-24 01:59:36'),
-(9, 'lastnew title', '1', 'Latest News & Blog', '', '', NULL, NULL, NULL),
+(6, 'Watch_Intro', '1', 'Watch Intro', '', '', NULL, NULL, NULL),
+(7, 'OurBestServices', '1', 'Our Best Services', '', '', NULL, NULL, NULL),
+(8, 'our_servicestext', '1', 'There are many variations of sssssss kkk Ipsum available, but the majority have suffered alteration in some form.', '', '', NULL, NULL, '2023-01-24 01:59:36'),
+(9, 'lastnew_title', '1', 'Latest News & Blog', '', '', NULL, NULL, NULL),
 (10, 'lastnew_text', '1', 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.', '', '', NULL, NULL, NULL),
 (11, 'Get_toch', '1', 'Get in Touch', '', '', NULL, NULL, NULL),
 (12, 'readytostart', '1', 'Ready to Get Started', '', '', NULL, NULL, NULL),
-(13, 'readytostartdescription', '1', 'At vero eos et accusamus et iusto odio dignissimos ducimus quiblanditiis praesentium', '', '', NULL, NULL, NULL),
+(13, 'readytostartdescription', '1', 'At vero eos et accssssssus et iusto odio dignissimos ducimus quiblanditiis praesentium', '', '', NULL, NULL, NULL),
 (14, 'Name', '1', 'Name', '', '', NULL, NULL, NULL),
 (15, 'Phone', '1', 'Phone', '', '', NULL, NULL, NULL),
 (16, 'email', '1', 'Email', '', '', NULL, NULL, NULL),
@@ -155,25 +163,28 @@ CREATE TABLE `migrations` (
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
-(14, '2023_01_23_123829_generalinfo', 1),
-(15, '2023_01_23_151109_create_failed_jobs_table', 0),
-(16, '2023_01_23_151109_create_generalinfo_table', 0),
-(17, '2023_01_23_151109_create_model_has_permissions_table', 0),
-(18, '2023_01_23_151109_create_model_has_roles_table', 0),
-(19, '2023_01_23_151109_create_oauth_access_tokens_table', 0),
-(20, '2023_01_23_151109_create_oauth_auth_codes_table', 0),
-(21, '2023_01_23_151109_create_oauth_clients_table', 0),
-(22, '2023_01_23_151109_create_oauth_personal_access_clients_table', 0),
-(23, '2023_01_23_151109_create_oauth_refresh_tokens_table', 0),
-(24, '2023_01_23_151109_create_password_resets_table', 0),
-(25, '2023_01_23_151109_create_permissions_table', 0),
-(26, '2023_01_23_151109_create_roles_table', 0),
-(27, '2023_01_23_151109_create_role_has_permissions_table', 0),
-(28, '2023_01_23_151109_create_slider_table', 0),
-(29, '2023_01_23_151109_create_users_table', 0),
-(30, '2023_01_23_151110_add_foreign_keys_to_model_has_permissions_table', 0),
-(31, '2023_01_23_151110_add_foreign_keys_to_model_has_roles_table', 0),
-(32, '2023_01_23_151110_add_foreign_keys_to_role_has_permissions_table', 0);
+(1, '2023_01_24_113536_create_aboutusinfo_table', 0),
+(2, '2023_01_24_113536_create_contactus_table', 0),
+(3, '2023_01_24_113536_create_failed_jobs_table', 0),
+(4, '2023_01_24_113536_create_generalinfo_table', 0),
+(5, '2023_01_24_113536_create_model_has_permissions_table', 0),
+(6, '2023_01_24_113536_create_model_has_roles_table', 0),
+(7, '2023_01_24_113536_create_news_models_table', 0),
+(8, '2023_01_24_113536_create_oauth_access_tokens_table', 0),
+(9, '2023_01_24_113536_create_oauth_auth_codes_table', 0),
+(10, '2023_01_24_113536_create_oauth_clients_table', 0),
+(11, '2023_01_24_113536_create_oauth_personal_access_clients_table', 0),
+(12, '2023_01_24_113536_create_oauth_refresh_tokens_table', 0),
+(13, '2023_01_24_113536_create_password_resets_table', 0),
+(14, '2023_01_24_113536_create_permissions_table', 0),
+(15, '2023_01_24_113536_create_roles_table', 0),
+(16, '2023_01_24_113536_create_role_has_permissions_table', 0),
+(17, '2023_01_24_113536_create_services_table', 0),
+(18, '2023_01_24_113536_create_sliders_table', 0),
+(19, '2023_01_24_113536_create_users_table', 0),
+(20, '2023_01_24_113537_add_foreign_keys_to_model_has_permissions_table', 0),
+(21, '2023_01_24_113537_add_foreign_keys_to_model_has_roles_table', 0),
+(22, '2023_01_24_113537_add_foreign_keys_to_role_has_permissions_table', 0);
 
 -- --------------------------------------------------------
 
@@ -423,7 +434,12 @@ CREATE TABLE `services` (
 --
 
 INSERT INTO `services` (`id`, `name`, `lang`, `title`, `desc_service`, `img`, `icon`, `isavisable`, `type`, `created_at`, `updated_at`) VALUES
-(1, 'sssssss', 1, 'bbbbbbbb', '<p style=\"margin: 30px 0px 0px; line-height: 1.5; opacity: 0.7;\">We are a digital agency that helps brands to achieve their business outcomes. We see technology as a tool to create amazing things.</p><div class=\"button\" style=\"margin-top: 40px;\"><span class=\"btn icon-btn rounded-full\" style=\"display: inline-flex; align-items: center; line-height: 48px; background-image: ; background-position-x: ; background-position-y: ; background-size: ; background-repeat-x: ; background-repeat-y: ; background-attachment: ; background-origin: ; background-clip: ; padding: 0px; border-radius: 50px; transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s; width: 48px; height: 48px;\"><span class=\"lni lni-play\" style=\"display: inline-block; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 1; flex-shrink: 0; speak: none; vertical-align: -0.125em;\"></span></span></div>', '1674521382about-img1.jpg.jpg', 'lni-anchor', 1, 0, '2023-01-23 17:35:28', '2023-01-23 23:14:03');
+(1, 'Refreshing Design', 1, 'Refreshing Design', 'Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy\n                eirmod tempor ividunt labor dolore magna.', '1674521382about-img1.jpg.jpg', 'lni-capsule', 1, 0, '2023-01-23 17:35:28', '2023-01-23 23:14:03'),
+(4, 'Solid Bootstrap', 1, 'Solid Bootstrap', 'Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy\r\n                eirmod tempor ividunt labor dolore magna.', '', 'lni-bootstrap', 1, 0, '2023-01-23 17:35:28', '2023-01-23 23:14:03'),
+(5, '100+ Components', 1, '100+ Components', 'eirmod tempor ividunt labor dolore magnaeirmod tempor ividunt labor dolore magnaeirmod tempor ividunt labor dolore magna', NULL, 'lni-shortcode', 1, 0, '2023-01-24 10:44:27', '2023-01-24 10:44:27'),
+(6, 'Speed Optimized', 1, 'Speed Optimized', 'Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy\r\n                eirmod tempor ividunt labor dolore magna.', NULL, 'lni-dashboard', 1, 0, '2023-01-24 10:44:27', '2023-01-24 10:44:27'),
+(7, 'Fully Customizable', 1, 'Fully Customizable', 'Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy\r\n                eirmod tempor ividunt labor dolore magna.', NULL, 'lni-layers', 1, 0, '2023-01-24 10:46:03', '2023-01-24 10:46:03'),
+(8, 'Regular Updates', 1, 'Regular Updates', 'Lorem ipsum dolor sit amet, adipscing elitr, sed diam nonumy\r\n                eirmod tempor ividunt labor dolore magna.\r\n              ', NULL, 'lni-reload', 1, 0, '2023-01-24 10:46:03', '2023-01-24 10:46:03');
 
 -- --------------------------------------------------------
 
@@ -451,8 +467,7 @@ CREATE TABLE `sliders` (
 --
 
 INSERT INTO `sliders` (`id`, `name`, `lang`, `title`, `desc_slide`, `img`, `icon`, `isavisable`, `type`, `urlvideo`, `created_at`, `updated_at`) VALUES
-(2, 'Corporate & Business', 1, 'Corporate & Business Site Template By Ayro UI.', '<p style=\"margin: 30px 0px 0px; line-height: 1.5; opacity: 0.7;\">We are a digital agency that helps brands to achieve their business outcomes. We see technology as a tool to create amazing things.</p><div class=\"button\" style=\"margin-top: 40px;\"><span class=\"btn icon-btn rounded-full\" style=\"display: inline-flex; align-items: center; line-height: 48px; background-image: ; background-position-x: ; background-position-y: ; background-size: ; background-repeat-x: ; background-repeat-y: ; background-attachment: ; background-origin: ; background-clip: ; padding: 0px; border-radius: 50px; transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s; width: 48px; height: 48px;\"><span class=\"lni lni-play\" style=\"display: inline-block; font-variant-numeric: normal; font-variant-east-asian: normal; font-stretch: normal; line-height: 1; flex-shrink: 0; speak: none; vertical-align: -0.125em;\"></span></span></div>', '1674509728hero-image.jpg.jpg', NULL, 1, 0, NULL, '2023-01-23 19:35:28', '2023-01-23 19:50:10'),
-(3, 'testt', 1, 'tessssst', NULL, '1674521057about-img1.jpg.jpg', NULL, 1, 0, NULL, '2023-01-23 22:44:17', '2023-01-23 22:44:17');
+(2, 'Corporate & Business', 1, 'Corporate & Business Site Template by Ayro UI.', '              We are a digital agency that helps brands to achieve their\n              business outcomes. We see technology as a tool to create amazing\n              things.\n', '1674509728hero-image.jpg.jpg', NULL, 1, 0, 'https://www.youtube.com/watch?v=r44RKWyfcFw&fbclid=IwAR21beSJORalzmzokxDRcGfkZA1AtRTE__l5N4r09HcGS5Y6vOluyouM9EM', '2023-01-23 19:35:28', '2023-01-23 19:50:10');
 
 -- --------------------------------------------------------
 
@@ -630,7 +645,7 @@ ALTER TABLE `aboutusinfo`
 -- AUTO_INCREMENT for table `contactus`
 --
 ALTER TABLE `contactus`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -648,7 +663,7 @@ ALTER TABLE `generalinfo`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `news_models`
@@ -684,7 +699,7 @@ ALTER TABLE `roles`
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `sliders`
